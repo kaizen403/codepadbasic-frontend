@@ -18,7 +18,7 @@ const Home: React.FC = () => {
   ): Promise<void> => {
     event.preventDefault();
     try {
-      const response = await fetch("http://13.201.186.133:3000/open", {
+      const response = await fetch("https://13.201.186.133:3000/open", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
 
   const handleSaveClick = async (): Promise<void> => {
     try {
-      const response = await fetch(`http://13.201.186.133:3000/update`, {
+      const response = await fetch(`https://13.201.186.133:3000/update`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
